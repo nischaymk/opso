@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - OPSO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">OP<span>SO</span></div>
+            
+            <!-- Main Navigation -->
+            <nav class="main-nav">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="research-guidance.html" class="nav-link">Research Guidance <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="psychology.html" class="dropdown-item">Psychology</a>
+                        <a href="political-science.html" class="dropdown-item">Political Science</a>
+                        <a href="economics.html" class="dropdown-item">Economics</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="publications.html" class="nav-link">Publications <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="publications-psychology.html" class="dropdown-item">Psychology</a>
+                        <a href="publications-political-science.html" class="dropdown-item">Political Science</a>
+                        <a href="publications-economics.html" class="dropdown-item">Economics</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="higher-education.html" class="nav-link">Higher Education <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="scholarship-opportunities.html" class="dropdown-item">Scholarship Opportunities</a>
+                        <a href="blogs.html" class="dropdown-item">Blogs</a>
+                        <a href="profile-building-he.html" class="dropdown-item">Profile Building</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="capacity-building.html" class="nav-link">Capacity Building <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="workshop-calendar.html" class="dropdown-item">Workshop Calendar</a>
+                        <a href="webinar.html" class="dropdown-item">Webinar</a>
+                        <a href="certificate-programme.html" class="dropdown-item">Certificate Programme</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="career-opportunities.html" class="nav-link">Career Opportunities <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="internships.html" class="dropdown-item">Internships</a>
+                        <a href="profile-building-career.html" class="dropdown-item">Profile Building</a>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- Mobile Navigation Toggle -->
+            <button class="mobile-nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container page-header-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team for any inquiries or support</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container breadcrumb-content">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span class="current">Contact</span>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-2">
+                <div class="fade-in-left">
+                    <h2>Get In Touch</h2>
+                    <p>We'd love to hear from you. Please fill out the form and we'll get back to you as soon as possible.</p>
+                    
+                    <div class="contact-info" style="margin-top: 30px;">
+                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--secondary); font-size: 1.2rem; width: 30px;"></i>
+                            <p>123 Education Street, Academic City, AC 12345</p>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                            <i class="fas fa-phone" style="color: var(--secondary); font-size: 1.2rem; width: 30px;"></i>
+                            <p>+1 (234) 567-890</p>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                            <i class="fas fa-envelope" style="color: var(--secondary); font-size: 1.2rem; width: 30px;"></i>
+                            <p>info@opso.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links" style="margin-top: 30px;">
+                        <h3>Follow Us</h3>
+                        <div style="display: flex; gap: 15px; margin-top: 15px;">
+                            <a href="#" class="researcher-social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="researcher-social"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="researcher-social"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="researcher-social"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in-right">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>OP<span>SO</span></h3>
+                    <p>Your premier destination for research guidance, publications, and career development opportunities.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <div class="footer-links">
+                        <a href="research-guidance.html">Research Guidance</a>
+                        <a href="publications.html">Publications</a>
+                        <a href="career-opportunities.html">Career Opportunities</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <div class="footer-links">
+                        <a href="mailto:info@opso.com">info@opso.com</a>
+                        <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        <a href="#">123 Education Street, Academic City</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 OPSO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
