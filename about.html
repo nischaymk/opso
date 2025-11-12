@@ -11,10 +11,17 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <div class="logo">OP<span>SO</span></div>
+            <div class="header-top">
+               <div class="logo">OP<span>SO</span></div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
             
             <!-- Main Navigation -->
-            <nav class="main-nav">
+            <nav class="main-nav" id="mainNav">
                 <div class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
                 </div>
@@ -81,8 +88,8 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container page-header-content">
-            <h1>About OPSO</h1>
-            <p>Learn more about our mission, vision, and the team behind OPSO</p>
+            <h1>About</h1>
+            <p style="text-align: justify;">The academic and professional landscape today is ever evolving and rapidly expanding. Students and early-researchers often face significant challenges in finding mentorship, research opportunities, funding, and credible platforms for publication and collaboration. While multiple professional networks exist today, and cater to general career development, a need remains for a specialised academic ecosystem that brings together students, scholars, researchers, mentors, publishers, granters, and employers under one digital umbrella. This platform aims to bridge these gaps by encouraging interdisciplinary collaboration, research opportunities, capacity building, and career growth within the academic and social science community.</p>
         </div>
     </section>
 
@@ -100,45 +107,41 @@
         <div class="container">
             <div class="grid-2">
                 <div class="fade-in-left">
-                    <h2>Our Mission</h2>
-                    <p>OPSO is committed to advancing knowledge and professional development through comprehensive research guidance, academic publications, and capacity building initiatives.</p>
-                    <p>We strive to create an ecosystem that fosters intellectual growth, collaboration, and innovation across various disciplines.</p>
-                    
                     <h2>Our Vision</h2>
-                    <p>To become a globally recognized platform that empowers researchers, academics, and professionals to achieve excellence in their respective fields.</p>
+                    <p style="text-align: justify;">Our vision is to create a dynamic, inclusive, and innovative digital ecosystem that connects learners, educators, researchers, and professionals in order to facilitate collaboration, mentorship, and growth across the discipline of social sciences.</p>
                 </div>
-                
-                <div class="fade-in-right">
-                    <img src="https://via.placeholder.com/500x400" alt="About OPSO" style="width: 100%; border-radius: 15px; box-shadow: var(--shadow);">
-                </div>
+
             </div>
             
-            <div class="section-title" style="margin-top: 60px;">
-                <h2>Our Values</h2>
+            <div class="section-title" style="margin-top: 80px;">
+                <h2>Our Objectives</h2>
             </div>
             
-            <div class="grid-3">
+            <div class="grid-1" style="max-width: 1000px; margin: 0 auto;">
                 <div class="card fade-in-up">
-                    <div class="card-content" style="text-align: center;">
-                        <i class="fas fa-graduation-cap" style="font-size: 3rem; color: var(--secondary); margin-bottom: 20px;"></i>
-                        <h3>Excellence</h3>
-                        <p>We maintain the highest standards in all our services and interactions.</p>
-                    </div>
-                </div>
-                
-                <div class="card fade-in-up">
-                    <div class="card-content" style="text-align: center;">
-                        <i class="fas fa-users" style="font-size: 3rem; color: var(--secondary); margin-bottom: 20px;"></i>
-                        <h3>Collaboration</h3>
-                        <p>We believe in the power of teamwork and shared knowledge.</p>
-                    </div>
-                </div>
-                
-                <div class="card fade-in-up">
-                    <div class="card-content" style="text-align: center;">
-                        <i class="fas fa-lightbulb" style="font-size: 3rem; color: var(--secondary); margin-bottom: 20px;"></i>
-                        <h3>Innovation</h3>
-                        <p>We continuously seek new approaches to research and learning.</p>
+                    <div class="card-content">
+                        <div style="display: grid; gap: 20px;">
+                            <div style="display: flex; align-items: flex-start; gap: 15px;">
+                                <div style="width: 8px; height: 8px; background: var(--gradient); border-radius: 50%; margin-top: 8px; flex-shrink: 0;"></div>
+                                <p style="margin: 0; font-size: 1.1rem; text-align: justify;"><strong>To provide students and scholars with a structured platform for academic networking and mentorship.</strong></p>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 15px;">
+                                <div style="width: 8px; height: 8px; background: var(--gradient); border-radius: 50%; margin-top: 8px; flex-shrink: 0;"></div>
+                                <p style="margin: 0; font-size: 1.1rem; text-align: justify;"><strong>To promote access to research guidance, publication avenues, and project funding opportunities.</strong></p>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 15px;">
+                                <div style="width: 8px; height: 8px; background: var(--gradient); border-radius: 50%; margin-top: 8px; flex-shrink: 0;"></div>
+                                <p style="margin: 0; font-size: 1.1rem; text-align: justify;"><strong>To bridge the gap between academia and industry through curated career opportunities.</strong></p>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 15px;">
+                                <div style="width: 8px; height: 8px; background: var(--gradient); border-radius: 50%; margin-top: 8px; flex-shrink: 0;"></div>
+                                <p style="margin: 0; font-size: 1.1rem; text-align: justify;"><strong>To strengthen capacity-building through training programs and knowledge exchange.</strong></p>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 15px;">
+                                <div style="width: 8px; height: 8px; background: var(--gradient); border-radius: 50%; margin-top: 8px; flex-shrink: 0;"></div>
+                                <p style="margin: 0; font-size: 1.1rem; text-align: justify;"><strong>To encourage interdisciplinary collaboration and innovation.</strong></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -146,44 +149,51 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+ <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>OP<span>SO</span></h3>
-                    <p>Your premier destination for research guidance, publications, and career development opportunities.</p>
+                    <p style="color: white;">Your premier destination for research guidance, publications, and career development opportunities.</p>
+                    <div class="researcher-social">
+                        <a href="https://www.linkedin.com/company/centre-for-east-asian-studies-christ-university/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/CEAS_eastasia?t=wffWl4StaHCsfwkuD3ZfXw&s=08"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ceas_christuniversity?igsh=MWdoY2YzYjBpeGhidQ=="><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
                 
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+                        <a href="about.html"><i class="fas fa-chevron-right"></i> About</a>
+                        <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a>
+                        <a href="projects.html"><i class="fas fa-chevron-right"></i> Projects</a>
                     </div>
                 </div>
                 
                 <div class="footer-column">
                     <h3>Services</h3>
                     <div class="footer-links">
-                        <a href="research-guidance.html">Research Guidance</a>
-                        <a href="publications.html">Publications</a>
-                        <a href="career-opportunities.html">Career Opportunities</a>
+                        <a href="research-guidance.html"><i class="fas fa-chevron-right"></i> Research Guidance</a>
+                        <a href="publications.html"><i class="fas fa-chevron-right"></i> Publications</a>
+                        <a href="career-opportunities.html"><i class="fas fa-chevron-right"></i> Career Opportunities</a>
+                        <a href="capacity-building.html"><i class="fas fa-chevron-right"></i> Capacity Building</a>
                     </div>
                 </div>
                 
-                <div class="footer-column">
+<div class="footer-column">
                     <h3>Contact Info</h3>
                     <div class="footer-links">
-                        <a href="mailto:info@opso.com">info@opso.com</a>
-                        <a href="tel:+1234567890">+1 (234) 567-890</a>
-                        <a href="#">123 Education Street, Academic City</a>
+                        <a href="mailto:eastasian.studies@christuniversity.in">eastasian.studies@christuniversity.in</a>
+                        <a href="tel:+919873751518">+91 9873751518</a>
+                        <a href="#">6th floor Central block Christ Deemed to be University Central Campus Hosur Main Road Bengaluru Karnataka 560029</a>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2023 OPSO. All rights reserved.</p>
+                <p style="color: white;">&copy; 2025 OPSO. All rights reserved.</p>
             </div>
         </div>
     </footer>

@@ -11,10 +11,17 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <div class="logo">OP<span>SO</span></div>
+            <div class="header-top">
+                <div class="logo">OP<span>SO</span></div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
             
             <!-- Main Navigation -->
-            <nav class="main-nav">
+            <nav class="main-nav" id="mainNav">
                 <div class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
                 </div>
@@ -75,20 +82,14 @@
                     </div>
                 </div>
             </nav>
-            
-            <!-- Mobile Navigation Toggle -->
-            <button class="mobile-nav-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
         </div>
     </header>
-
 
     <!-- Page Header -->
     <section class="page-header">
         <div class="container page-header-content">
             <h1>Contact Us</h1>
-            <p>Get in touch with our team for any inquiries or support</p>
+            <p style="text-align: center;">Get in touch with our team for any inquiries or support</p>
         </div>
     </section>
 
@@ -104,107 +105,96 @@
     <!-- Contact Section -->
     <section class="section">
         <div class="container">
-            <div class="grid-2">
-                <div class="fade-in-left">
-                    <h2>Get In Touch</h2>
-                    <p>We'd love to hear from you. Please fill out the form and we'll get back to you as soon as possible.</p>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="fade-in-up">
+                    <h2 style="text-align: center; margin-bottom: 50px;">Get In Touch</h2>
                     
-                    <div class="contact-info" style="margin-top: 30px;">
-                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                            <i class="fas fa-map-marker-alt" style="color: var(--secondary); font-size: 1.2rem; width: 30px;"></i>
-                            <p>123 Education Street, Academic City, AC 12345</p>
+                    <div class="contact-info">
+                        <div class="contact-item" style="display: flex; align-items: flex-start; margin-bottom: 40px; padding: 30px; background: white; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                            <div style="width: 60px; height: 60px; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 25px; flex-shrink: 0;">
+                                <i class="fas fa-map-marker-alt" style="color: white; font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h3 style="margin-bottom: 10px; color: var(--primary);">Address</h3>
+                                <p style="margin: 0; text-align: justify; font-size: 1.1rem; line-height: 1.6;">
+                                    6th floor Central block Christ Deemed to be University Central Campus<br>
+                                    Hosur Main Road<br>
+                                    Bengaluru, Karnataka 560029
+                                </p>
+                            </div>
                         </div>
                         
-                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                            <i class="fas fa-phone" style="color: var(--secondary); font-size: 1.2rem; width: 30px;"></i>
-                            <p>+1 (234) 567-890</p>
+                        <div class="contact-item" style="display: flex; align-items: flex-start; margin-bottom: 40px; padding: 30px; background: white; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                            <div style="width: 60px; height: 60px; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 25px; flex-shrink: 0;">
+                                <i class="fas fa-phone" style="color: white; font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h3 style="margin-bottom: 10px; color: var(--primary);">Phone</h3>
+                                <p style="margin: 0; font-size: 1.1rem;">+91 9873751518</p>
+                            </div>
                         </div>
                         
-                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                            <i class="fas fa-envelope" style="color: var(--secondary); font-size: 1.2rem; width: 30px;"></i>
-                            <p>info@opso.com</p>
+                        <div class="contact-item" style="display: flex; align-items: flex-start; margin-bottom: 40px; padding: 30px; background: white; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                            <div style="width: 60px; height: 60px; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 25px; flex-shrink: 0;">
+                                <i class="fas fa-envelope" style="color: white; font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h3 style="margin-bottom: 10px; color: var(--primary);">Email</h3>
+                                <p style="margin: 0; font-size: 1.1rem;">eastasian.studies@christuniversity.in</p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="social-links" style="margin-top: 30px;">
-                        <h3>Follow Us</h3>
-                        <div style="display: flex; gap: 15px; margin-top: 15px;">
-                            <a href="#" class="researcher-social"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="researcher-social"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="researcher-social"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="researcher-social"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="fade-in-right">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject *</label>
-                            <input type="text" id="subject" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
-                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>OP<span>SO</span></h3>
-                    <p>Your premier destination for research guidance, publications, and career development opportunities.</p>
+                    <p style="color: white;">Your premier destination for research guidance, publications, and career development opportunities.</p>
+                    <div class="researcher-social">
+                        <a href="https://www.linkedin.com/company/centre-for-east-asian-studies-christ-university/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/CEAS_eastasia?t=wffWl4StaHCsfwkuD3ZfXw&s=08"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ceas_christuniversity?igsh=MWdoY2YzYjBpeGhidQ=="><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
                 
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+                        <a href="about.html"><i class="fas fa-chevron-right"></i> About</a>
+                        <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a>
+                        <a href="projects.html"><i class="fas fa-chevron-right"></i> Projects</a>
                     </div>
                 </div>
                 
                 <div class="footer-column">
                     <h3>Services</h3>
                     <div class="footer-links">
-                        <a href="research-guidance.html">Research Guidance</a>
-                        <a href="publications.html">Publications</a>
-                        <a href="career-opportunities.html">Career Opportunities</a>
+                        <a href="research-guidance.html"><i class="fas fa-chevron-right"></i> Research Guidance</a>
+                        <a href="publications.html"><i class="fas fa-chevron-right"></i> Publications</a>
+                        <a href="career-opportunities.html"><i class="fas fa-chevron-right"></i> Career Opportunities</a>
+                        <a href="capacity-building.html"><i class="fas fa-chevron-right"></i> Capacity Building</a>
                     </div>
                 </div>
                 
-                <div class="footer-column">
+<div class="footer-column">
                     <h3>Contact Info</h3>
                     <div class="footer-links">
-                        <a href="mailto:info@opso.com">info@opso.com</a>
-                        <a href="tel:+1234567890">+1 (234) 567-890</a>
-                        <a href="#">123 Education Street, Academic City</a>
+                        <a href="mailto:eastasian.studies@christuniversity.in">eastasian.studies@christuniversity.in</a>
+                        <a href="tel:+919873751518">+91 9873751518</a>
+                        <a href="#">6th floor Central block Christ Deemed to be University Central Campus Hosur Main Road Bengaluru Karnataka 560029</a>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2023 OPSO. All rights reserved.</p>
+                <p style="color: white;">&copy; 2025 OPSO. All rights reserved.</p>
             </div>
         </div>
     </footer>
