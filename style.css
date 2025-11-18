@@ -418,6 +418,7 @@ header {
     width: 16px;
     text-align: center;
     transition: all 0.3s ease;
+    
 }
 
 .dropdown-item:hover, .dropdown-item.active {
